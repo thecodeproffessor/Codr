@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+    {% include 'includes/stylesheets.html' %}
+</head>
+<body>
+
+<div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/"> Codr<span>.</span> </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
+                <li><a class="smooth-menu" href="#about">About</a></li>
+                <li><a class="smooth-menu" href="#services">Services</a></li>
+                <li><a class="smooth-menu" href="#portfolio">Portfolio</a></li>
+                <!-- <li><a class="smooth-menu" href="#testimonial">Testimonial</a></li> -->
+                <li><a class="smooth-menu" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<div class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <p class="col-12 text-center"><strong><i>This website is created by <a href="https://www.twitter.com/thecodeproffess"
+                                target="_blank">thecodeproffessor</a> </i></strong></p>
+                <p>&copy;Copyright 2020</p>
+                <p>
+                    <a href="https://web.facebook.com/thecodeproffessor/" target="_blank" class="social-item"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/thecodeproffess" target="_blank" class="social-item"><span class="icon-twitter"></span></a>
+                    <a href="https://www.instagram.com/thecodeproffessor/" target="_blank" class="social-item"><span class="icon-instagram"></span></a>
+                    <a href="https://www.linkedin.com/in/daniel-ajayi-21833714a/" target="_blank" class="social-item"><span class="icon-linkedin"></span></a>
+                    <!-- <a href="{{ footer.link5 }}" class="social-item"><span class="icon-vimeo"></span></a> -->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'includes/scripts.html' %}
+</body>
+</html>
